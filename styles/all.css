@@ -164,6 +164,11 @@ body.home{background-image:url(../images/bg-top4.png)}
 .sample .box .title a{color:#888}
 .sample .box .tooltip{display:none;position:absolute;top:91px;left:155px;font-size:11px;color:#5092bd;font-weight:300;line-height:1em;font-family:'Ubuntu',sans-serif;font-style:normal;text-rendering:optimizelegibility}
 .sample .box:hover .tooltip{display:block}
+.sampleShot {background: none repeat scroll 0 0 #EEEEEE;border: 1px solid #DDDDDD;cursor: pointer;float: left;height: 110px;margin-bottom: 15px;margin-right: 15px;padding: 5px;width: 290px;list-style-type: none;}
+.sampleShot div {color: #444444;}
+.sampleShot a { margin: 0px; display: block; width: 100%; height: 100%; }
+.sampleShot a:hover {text-decoration: none;}
+iframe.sampleShot {min-height: 400px; width:100%;}
 .box>div{padding:0 10px;font-size:12px}
 .box .title,.box .description{padding-left:10px;color:#888}
 .box .title h4{font-size:14px}

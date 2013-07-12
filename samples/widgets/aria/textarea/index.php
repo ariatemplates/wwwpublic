@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<?php include '../../../../include/_head.php' ?>
+		<script type="text/javascript" src="/js/top-scrolling.js"></script>		
+	</head>
+	<body class="documentation">
+		<div id="top"><a href="#top"></a></div>
+		<?php include '../../../../include/_header.php' ?>
+		<div class="content-wrapper">
+			<section class="content">
+				<div class="wrapper">
+					<div class="columns main-page two">
+						<h2><a href="../../../">Samples</a> \ <a href="../../">Widgets</a> \ <a href="../">Aria</a> \ 						
+						<h1>Text Area</h1></h2>						
+						<p>
+							A textarea widget in Aria Templates will have a label and input text where users can enter multi-line text.
+						</p>
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/textarea/'></iframe>						
+						<p>
+							A Simple textarea with helptext.
+						</p>
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/textarea/'></iframe>						
+						<p>
+							A Textarea with a prefilled value.
+						</p>
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/textarea/prefill/'></iframe>						
+						<p>
+							The Textarea value can be bound to the datamodel.
+						</p>
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/textarea/binding/'></iframe>						
+						<p>
+							The Textarea value which is bound to datamodel can be transformed or modified.
+						</p>
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/textarea/bindingTransform/'></iframe>						
+						
+					</div>
+				</div>
+			</section>
+		</div>
+		<?php include '../../../../include/_footer.html' ?>
+	</body>
+</html> 

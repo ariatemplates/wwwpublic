@@ -18,6 +18,7 @@
 								<div class="links">
 									<a href="/usermanual">Usermanual</a>
 									<a href="/api">API doc</a>
+									<a href="/samples">Samples</a>
 									<a href="/guides">Guides</a>
 								</div>
 							</div>

@@ -19,6 +19,9 @@
 							<h3>Api documentation</h3>
 							Our user-friendly API reference.
 							<a href="aria/guide/apps/apidocs/">Check out the API Reference</a>.</p>
+							<h3>Samples</h3>
+							Our reference samples help you to learn and use the features available in Aria Templates. 
+							<p><a href="/samples">Check out the samples</a>.</p>
 							<h3>Guides</h3>
 							<p>Guides are more than just live samples. They are full featured step by step tutorials you can follow to help you understand how Aria Templates works.</p>
 							<p><a href="/guides">Browse the guides</a></p>
