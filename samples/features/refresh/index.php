@@ -13,12 +13,9 @@
 				<div class="wrapper">
 					<div class="columns main-page two">
 						<h2><a href="../../">Samples</a> \ <a href="../">Features</a> \ 					
-						<h1>Refresh</h1></h2>						
-						<p>									
-						Sample coming soon..
-						</p>
+						<h1>Refresh</h1></h2>										
 
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/features/refresh/'></iframe>
 						
 					</div>
 				</div>
