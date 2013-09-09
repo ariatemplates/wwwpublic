@@ -14,11 +14,8 @@
 					<div class="columns main-page two">
 						<h2><a href="../../../">Samples</a> \ <a href="../../">Widgets</a> \ <a href="../">Custom</a> \ 						
 						<h1>AutoComplete - Markup only</h1></h2>						
-						<p>							
-							In this sample the text input is created with a simple input tag. It's now necessary to plug correctly keyboard events to an action in the AutoComplete controller.   
-						</p>
-						Sample coming soon..
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+						
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/widgetlibs/html/autocomplete/markup'></iframe>
 						
 					</div>
 				</div>

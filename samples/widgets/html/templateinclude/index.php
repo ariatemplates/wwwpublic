@@ -14,11 +14,8 @@
 					<div class="columns main-page two">
 						<h2><a href="../../../">Samples</a> \ <a href="../../">Widgets</a> \ <a href="../">HTML</a> \ 						
 						<h1>Template Include</h1></h2>						
-						<p>							
-							Simple template include widget. 
-						</p>
-						Sample coming soon..
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+						
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/widgetlibs/html/template'></iframe>
 						
 					</div>
 				</div>

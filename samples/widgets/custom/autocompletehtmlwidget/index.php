@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,11 +13,8 @@
 					<div class="columns main-page two">
 						<h2><a href="../../../">Samples</a> \ <a href="../../">Widgets</a> \ <a href="../">Custom</a> \ 						
 						<h1>AutoComplete - HTML Widget</h1></h2>						
-						<p>							
-							This sample shows how to create an AutoComplete widget reusing the TextInput widget and the Suggestions controller.  
-						</p>
-						Sample coming soon..
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+						
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/widgetlibs/html/autocomplete/widget'></iframe>
 						
 					</div>
 				</div>

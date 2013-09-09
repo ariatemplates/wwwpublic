@@ -14,11 +14,8 @@
 					<div class="columns main-page two">
 						<h2><a href="../../../">Samples</a> \ <a href="../../">Widgets</a> \ <a href="../">Touch</a> \ 						
 						<h1>Double Slider</h1></h2>						
-						<p>							
-							A Touch Slider widget, uses the Drag Utility.  
-						</p>
-						Sample coming soon..
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+						
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/touch/doubleslider'></iframe>
 						
 					</div>
 				</div>

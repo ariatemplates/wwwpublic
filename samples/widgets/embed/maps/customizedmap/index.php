@@ -14,11 +14,8 @@
 					<div class="columns main-page two">
 						<h2><a href="../../../../">Samples</a> \ <a href="../../../">Widgets</a> \ <a href="../../">Embed</a> \  <a href="../">Maps</a> \						
 						<h1>Customized Map</h1></h2>						
-						<p>							
-							Creates a customized map. 
-						</p>
-						Sample coming soon..
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+												
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/customMap'></iframe>
 						
 					</div>
 				</div>
