@@ -14,11 +14,8 @@
 					<div class="columns main-page two">
 						<h2><a href="../../">Samples</a> \ <a href="../">Utilities</a> \ 					
 						<h1>Processing Indicator</h1></h2>						
-						<p>									
-						Sample coming soon..
-						</p>
-
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+						
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/utils/loadingoverlay'></iframe>
 						
 					</div>
 				</div>

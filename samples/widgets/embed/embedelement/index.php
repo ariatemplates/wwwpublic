@@ -16,9 +16,8 @@
 						<h1>Embed Element</h1></h2>						
 						<p>							
 							Creates special type of DOM container to include standard HTML/JS/CSS. 
-						</p>
-						Sample coming soon..
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+						</p>						
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/embed/'></iframe>
 						
 					</div>
 				</div>

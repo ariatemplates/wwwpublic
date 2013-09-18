@@ -17,8 +17,8 @@
 						<p>							
 							Placeholder widget to include configurable content. 
 						</p>
-						Sample coming soon..
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+												
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/placeholder'></iframe>
 						
 					</div>
 				</div>

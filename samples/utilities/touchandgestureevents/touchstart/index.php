@@ -14,11 +14,8 @@
 					<div class="columns main-page two">
 						<h2><a href="../../../">Samples</a> \ <a href="../../">Utilities</a> \ <a href="../">Touch and Gesture Events</a> \ 
 						<h1>Touch Start</h1></h2>						
-						<p>									
-						Sample coming soon..
-						</p>
-
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+						
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/utils/touch/touchstart'></iframe>
 						
 					</div>
 				</div>

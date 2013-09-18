@@ -16,9 +16,8 @@
 						<h1>Simple Map</h1></h2>						
 						<p>							
 							Creates a simple map. 
-						</p>
-						Sample coming soon..
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+						</p>						
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/map/'></iframe>
 						
 					</div>
 				</div>

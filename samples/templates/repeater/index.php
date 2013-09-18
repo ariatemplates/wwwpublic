@@ -15,10 +15,10 @@
 						<h2><a href="../../">Samples</a> \ <a href="../">Templates</a> \ 					
 						<h1>Repeater</h1></h2>						
 						<p>									
-						Sample coming soon..
+						
 						</p>
 
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/templates/repeater/'></iframe>
 						
 					</div>
 				</div>

@@ -17,8 +17,8 @@
 						<p>							
 							This page shows an example of a basic slider widget which is not in the default aria library, and which uses the following features of the Aria Templates framework: a CSS template, event delegation and listeners on the data model. 
 						</p>
-						Sample coming soon..
-						<!-- <iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/html/templateinclude/'></iframe> /-->
+						
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/customSlider/'></iframe>
 						
 					</div>
 				</div>
