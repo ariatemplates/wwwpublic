@@ -25,6 +25,27 @@
 										<p>Template include</p>
 										<div>Simple template include widget.</div>
 									</a>
+								</li>	
+								
+								<li class="sampleShot">		
+									<a href="checkbox">						
+										<p>Check Box</p>
+										<div>Simple Check Box widget.</div>
+									</a>
+								</li>	
+								
+								<li class="sampleShot">		
+									<a href="radiobutton">						
+										<p>Radio Button</p>
+										<div>Simple Radio Button widget.</div>
+									</a>
+								</li>
+								
+								<li class="sampleShot">		
+									<a href="select">						
+										<p>Select</p>
+										<div>Simple Select widget.</div>
+									</a>
 								</li>								
 							</ul>						
 					</div>

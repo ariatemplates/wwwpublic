@@ -12,10 +12,10 @@
 			<section class="content">
 				<div class="wrapper">
 					<div class="columns main-page two">
-						<h2><a href="../../../">Samples</a> \ <a href="../../">Utilities</a> \ <a href="../">Touch and Gesture Events</a> \ 
-						<h1>Gestures</h1></h2>						
-
-						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/utils/touch/gestures'></iframe>
+						<h2><a href="../../../">Samples</a> \ <a href="../../">Widgets</a> \ <a href="../">HTML</a> \ 						
+						<h1>Select</h1></h2>						
+						
+						<iframe class='sampleShot' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/samples/widgets/widgetlibs/html/select'></iframe>
 						
 					</div>
 				</div>
