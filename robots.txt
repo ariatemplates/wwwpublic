@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /aria
+Allow: /aria/guide/apps/apidocs/
 Disallow: /usermanual/next/
