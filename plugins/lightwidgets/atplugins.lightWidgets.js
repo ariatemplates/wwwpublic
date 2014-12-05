@@ -1,1 +1,1 @@
-aria.core.DownloadMgr.updateUrlMap({atplugins:{"**":"atplugins.lightWidgets-407e6772690ea7db688331507f56df86.js"}});
+aria.core.DownloadMgr.updateUrlMap({atplugins:{"**":"atplugins.lightWidgets-6bc6367c6ea8e1f613d1d264f61bccdd.js"}});

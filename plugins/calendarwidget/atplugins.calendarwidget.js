@@ -1,1 +1,1 @@
-aria.core.DownloadMgr.updateUrlMap({atplugins:{"**":"atplugins.calendarwidget-2d5430a80fce2f45efec336df6b75c56.js"}});
+aria.core.DownloadMgr.updateUrlMap({atplugins:{"**":"atplugins.calendarwidget-7645bbf4fab2576e7c72b9f374019f54.js"}});
