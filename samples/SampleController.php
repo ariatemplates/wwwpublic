@@ -52,7 +52,7 @@ class SampleController {
 
 		$waiAria = filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE));
 		if ($waiAria) {
-			$snippet_url .= "?wai=true"
+			$snippet_url .= "?wai=true";
 		}
 		return $snippet_url;
 	}
