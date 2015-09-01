@@ -11,7 +11,7 @@
 		$newBreadcrum = $breadcrum;
 		$newBreadcrum[] = strtolower($name);
 	?>
-	<li><a href="<?php echo $controller.getCategoryUrl($newBreadcrum); ?>"><?php echo $name; ?></a><?php if (count($categorie) > 0) { displayCategories($categorie, $newBreadcrum, $level + 1); } ?></li>
+	<li><a href="<?php echo $controller->getCategoryUrl($newBreadcrum); ?>"><?php echo $name; ?></a><?php if (count($categorie) > 0) { displayCategories($categorie, $newBreadcrum, $level + 1); } ?></li>
 	<?php } ?>
 </ul>
 <?php } ?>
