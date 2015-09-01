@@ -3,7 +3,9 @@
 	$controller = new CategoriesController();
 	$data = $controller->getData();
 ?>
-<?php function displayCategories($categories, $breadcrum, $level) { ?>
+<?php function displayCategories($categories, $breadcrum, $level) {
+		global $controller;
+	?>
 <ul class="level<?php echo $level; ?>">
 	<?php foreach($categories as $name => &$categorie)  {
 		$newBreadcrum = $breadcrum;
