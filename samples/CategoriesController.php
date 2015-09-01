@@ -49,14 +49,14 @@ class CategoriesController {
 		return $data;
 	}
 
-	public function getSampleUrl($item) {
-		if ($item == null) {
-			return "";
-		}
+	public function getCategoryUrl($categoryPath) {
+		$url = "/samples/" . implode('/', $categoryPath);
 
-		$url = explode('.', $item->path);
-		array_pop($url); // The higher level is the file name
-		return 'http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/'.implode('/', $url);
+		$waiAria = filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE));
+		if ($waiAria) {
+			$url .= "?wai=true"
+		}
+		return $url;
 	}
 
 }

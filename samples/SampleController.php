@@ -13,6 +13,7 @@ class SampleController {
 		//Debug::display($items);
 		//$data->basePath = implode('.', $basePath);
 
+
 		$path = @$_GET['path'];
 		if ($path != null) {
 			$path = preg_replace('/[^a-z0-9.]/i', '', $path); // Security concern, only accept these characters
@@ -33,8 +34,9 @@ class SampleController {
 				Debug::display("$path not found");
 			}
 
-
 		}
+
+		$data->waiAria = filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE));
 
 		return $data;
 	}
@@ -46,7 +48,13 @@ class SampleController {
 
 		$url = explode('.', $item->path);
 		array_pop($url); // The higher level is the file name
-		return 'http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/'.implode('/', $url);
+		$snippet_url = 'http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/'.implode('/', $url);
+
+		$waiAria = filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE));
+		if ($waiAria) {
+			$snippet_url .= "?wai=true"
+		}
+		return $snippet_url;
 	}
 }
 ?>

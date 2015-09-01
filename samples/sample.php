@@ -9,15 +9,22 @@
 	$previous = &$data->previous;
 	$next = &$data->next;
 
+	$previousUrl = "/samples/?path=" . $previous->path;
+	$nextUrl = "/samples/?path=" . $next->path;
+	if ($data->waiAria) {
+		 $previousUrl .= "&wai=true";
+		 $nextUrl .= "&wai=true";
+	}
+
 
 ?>
 <nav class="nav" id="post-nav">
 	<?php if ($previous != null) {?>
-	<div class="alignleft nav-previous"><a href="/samples/?path=<?php echo $previous->path; ?>">Previous</a></div>
+	<div class="alignleft nav-previous"><a href="<?php echo $previousUrl; ?>">Previous</a></div>
 	<?php } ?>
 	<div class="aligncenter nav-main"><a id="menu" href="/samples/">Go back to list</a></div>
 	<?php if ($next != null) {?>
-	<div class="alignright nav-next"><a href="/samples/?path=<?php echo $next->path; ?>">Next</a></div>
+	<div class="alignright nav-next"><a href="<?php echo $nextUrl; ?>">Next</a></div>
 	<?php } ?>
 </nav>
 <h1><?php echo $item->title; ?></h1>

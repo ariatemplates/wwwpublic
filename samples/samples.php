@@ -20,7 +20,7 @@
 <ul class="samplesList">
 	<?php foreach($items as &$item) { ?>
 	<li class="sampleShot">
-		<a href="/samples/?path=<?php echo $item->path; ?>">
+		<a href="<?php echo $controller->getSampleUrl($item); ?>">
 			<h4><?php echo $item->title; ?></h4>
 			<div><?php echo $item->desc; ?></div>
 		</a>

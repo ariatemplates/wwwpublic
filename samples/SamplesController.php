@@ -14,6 +14,8 @@ class SamplesController {
                 'url' => '/samples/'
         ));
 
+        $waiAria = filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE));
+
         $cat = @$_GET['cat'];
         if ($cat != null) {
             $cat = preg_replace('#[^a-z0-9/ ]#i', '', $cat);
@@ -36,9 +38,13 @@ class SamplesController {
             $currentParams = array();
             foreach(explode('/', $cat) as $category) {
             	$currentParams[] = $category;
+                $url = '/samples/?cat='.implode('/', $currentParams);
+                if ($waiAria) {
+                    $url .= "&wai=true";
+                }
             	$data->breadcrums[] = array(
             		'label' => $category,
-           			'url' => '/samples/?cat='.implode('/', $currentParams)
+           			'url' => $url
                	);
             }
 
@@ -64,8 +70,16 @@ class SamplesController {
             $data->items = $filtered;
         }
 
-
         return $data;
+    }
+
+    public function getSampleUrl($item) {
+        $url = "/samples/?path=" . $item->path;
+        $waiAria = filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE));
+        if ($waiAria) {
+            $url .= "&wai=true";
+        }
+        return $url;
     }
 
 }
