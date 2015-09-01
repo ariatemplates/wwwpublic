@@ -7,14 +7,14 @@ class SamplesController {
 
     public function getData() {
 
+        $waiAria = filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE));
+
         $data = new stdClass();
         $data->items = Helper::getManifest();
         $data->breadcrums = array(array(
                 'label' => 'Samples',
-                'url' => '/samples/'
+                'url' => $waiAria ? '/samples/?wai=true' : '/samples/'
         ));
-
-        $waiAria = filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE));
 
         $cat = @$_GET['cat'];
         if ($cat != null) {
