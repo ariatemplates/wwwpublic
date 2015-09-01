@@ -54,7 +54,7 @@ class CategoriesController {
 
 		$waiAria = filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE));
 		if ($waiAria) {
-			$url .= "?wai=true"
+			$url .= "?wai=true";
 		}
 		return $url;
 	}
