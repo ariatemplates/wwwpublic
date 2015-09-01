@@ -9,7 +9,7 @@
 		$newBreadcrum = $breadcrum;
 		$newBreadcrum[] = strtolower($name);
 	?>
-	<li><a href="<?php echo $controller.getCategotyUrl($newBreadcrum); ?>"><?php echo $name; ?></a><?php if (count($categorie) > 0) { displayCategories($categorie, $newBreadcrum, $level + 1); } ?></li>
+	<li><a href="<?php echo $controller.getCategoryUrl($newBreadcrum); ?>"><?php echo $name; ?></a><?php if (count($categorie) > 0) { displayCategories($categorie, $newBreadcrum, $level + 1); } ?></li>
 	<?php } ?>
 </ul>
 <?php } ?>
@@ -20,7 +20,7 @@
 			<div><label for="s" class="screen-reader-text">Search for:</label><input type="text" id="s" name="s" value="<?php echo $data->search; ?>"><input type="submit" value="Search" id="searchsubmit"></div>
 
 			<?php
-				if (filter_input(@$_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE))) {
+				if (filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE))) {
 			?>
 				<input type="hidden" name="wai" value="true" />
 			<?php
