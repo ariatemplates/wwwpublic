@@ -20,7 +20,7 @@ class SamplesController {
         if ($cat != null) {
             $cat = preg_replace('#[^a-z0-9\-/ ]#i', '', $cat);
             $filtered = array();
-            $catRegexp = '#,(?: *)?'.$cat.'[,/]#';
+            $catRegexp = '#,'.$cat.'[,/]#i';
             foreach($data->items as $item) {
                 $categories = @$item->categories;
                 if ($categories == null) {
@@ -63,6 +63,10 @@ class SamplesController {
                 $categories = @$item->categories;
                 if ($categories == null) {
                     $categories = 'unclassified';
+                }
+
+                if (is_array($categories)) {
+                    $categories = implode(',', $categories);
                 }
 
                 if (preg_match($searchRegexp, $categories) || preg_match($searchRegexp, $item->title) || preg_match($searchRegexp, $item->desc)) {
