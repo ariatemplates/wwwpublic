@@ -22,6 +22,7 @@ class SamplesController {
             $filtered = array();
             $catRegexp = '#,(?: *)?'.$cat.'[,/]#';
             foreach($data->items as $item) {
+                $categories = @$item->categories;
                 if ($categories == null) {
                     $categories = array('Unclassified');
                 }
