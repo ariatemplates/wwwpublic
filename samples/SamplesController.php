@@ -20,13 +20,15 @@ class SamplesController {
         if ($cat != null) {
             $cat = preg_replace('#[^a-z0-9\-/ ]#i', '', $cat);
             $filtered = array();
-            $catRegexp = '#,'.$cat.'[,/]#';
-            foreach($data->items as &$item) {
-                $categories = strtolower(@$item->categories);
+            $catRegexp = '#,(?: *)?'.$cat.'[,/]#';
+            foreach($data->items as $item) {
                 if ($categories == null) {
-                    $categories = 'unclassified';
+                    $categories = array('Unclassified');
                 }
-                $categories = ','.$categories.',';
+                if (!is_array($categories)) {
+    				    $categories = array($categories);
+    			    }
+                $categories = ','.implode(',', $categories).',';
                 if (preg_match($catRegexp, $categories)) {
                     $filtered[] = $item;
                 }

@@ -9,14 +9,17 @@ class CategoriesController {
 		$items = Helper::getManifest();
 
 		$breadcrumbs = array();
-		foreach ($items as &$item) {
+		foreach ($items as $item) {
 			$categories = @$item->categories;
 			if ($categories == null) {
-				$categories = 'unclassified';
+				$categories = array('Unclassified');
 			}
 
-			$categories = explode(',', $categories);
+			if (!is_array($categories)) {
+				$categories = array($categories);
+			}
 			foreach($categories as $categorie) {
+				$categorie = trim($categorie);
 				if (@$breadcrumbs[$categorie] == null) {
 					$breadcrumbs[$categorie] = 0;
 				}
