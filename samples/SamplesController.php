@@ -18,7 +18,7 @@ class SamplesController {
 
         $cat = @$_GET['cat'];
         if ($cat != null) {
-            $cat = preg_replace('#[^a-z0-9/ ]#i', '', $cat);
+            $cat = preg_replace('#[^a-z0-9\-/ ]#i', '', $cat);
             $filtered = array();
             $catRegexp = '#,'.$cat.'[,/]#';
             foreach($data->items as &$item) {

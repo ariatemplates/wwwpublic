@@ -16,7 +16,7 @@ class CategoriesController {
 			}
 
 			$categories = explode(',', $categories);
-			foreach($categories as &$categorie) {
+			foreach($categories as $categorie) {
 				if (@$breadcrumbs[$categorie] == null) {
 					$breadcrumbs[$categorie] = 0;
 				}

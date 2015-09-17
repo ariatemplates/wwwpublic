@@ -30,7 +30,7 @@ class Env {
 			self::$bdd = '';
 			self::$os_local = OS_Windows;
 
-			Env::$manifestUrl = 'https://raw.github.com/ariatemplates/documentation-code/master/manifest.json';
+			Env::$manifestUrl = 'https://raw.githubusercontent.com/ariatemplates/documentation-code/master/manifest.json';
 
 		} else {
 			self::$isProd = true;
@@ -42,7 +42,7 @@ class Env {
 			self::$bdd = '';
 			self::$os_local = OS_Unix;
 
-			Env::$manifestUrl = 'https://raw.github.com/ariatemplates/documentation-code/master/manifest.json';
+			Env::$manifestUrl = 'https://raw.githubusercontent.com/ariatemplates/documentation-code/master/manifest.json';
 
 		}
 	}
