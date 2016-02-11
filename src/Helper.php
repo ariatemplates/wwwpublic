@@ -28,5 +28,31 @@ class Helper {
 		return self::$manifest;
 	}
 
+	public static function getSamplesList($cat = null) {
+		$items = self::getManifest();
+		if ($cat) {
+			$cat = preg_replace('#[^a-z0-9\-/ ]#i', '', $cat);
+			$filtered = array();
+			$catRegexp = '#,'.$cat.'[,/]#i';
+			foreach($items as $item) {
+				$categories = @$item->categories;
+				if ($categories == null) {
+					$categories = array('Unclassified');
+				}
+				if (!is_array($categories)) {
+					$categories = array($categories);
+				}
+				$categories = ','.implode(',', $categories).',';
+				if (preg_match($catRegexp, $categories)) {
+					$filtered[] = $item;
+				}
+			}
+
+			$items = $filtered;
+		}
+		return $items;
+	}
+
+
 }
 ?>

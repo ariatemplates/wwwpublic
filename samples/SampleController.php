@@ -9,7 +9,7 @@ class SampleController {
 
 		$data = new stdClass();
 
-		$items = Helper::getManifest();
+		$items = Helper::getSamplesList(@$_GET['cat']);
 		//Debug::display($items);
 		//$data->basePath = implode('.', $basePath);
 
@@ -24,6 +24,8 @@ class SampleController {
 					break;
 				}
 			}
+
+			$data->cat = @$_GET['cat'] ? $_GET['cat'] : '';
 
 			if ($found) {
 				$data->item = &$items[$i];

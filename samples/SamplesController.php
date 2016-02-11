@@ -11,33 +11,15 @@ class SamplesController {
         $waiAria = filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE));
 
         $data = new stdClass();
-        $data->items = Helper::getManifest();
+        $cat = @$_GET['cat'];
+        $data->items = Helper::getSamplesList($cat);
         $data->breadcrums = array(array(
                 'label' => 'Samples',
                 'url' => $waiAria ? '/samples/?wai=true' : '/samples/'
         ));
 
-        $cat = @$_GET['cat'];
         if ($cat != null) {
-            $cat = preg_replace('#[^a-z0-9\-/ ]#i', '', $cat);
-            $this->cat = $cat;
-            $filtered = array();
-            $catRegexp = '#,'.$cat.'[,/]#i';
-            foreach($data->items as $item) {
-                $categories = @$item->categories;
-                if ($categories == null) {
-                    $categories = array('Unclassified');
-                }
-                if (!is_array($categories)) {
-    				    $categories = array($categories);
-    			    }
-                $categories = ','.implode(',', $categories).',';
-                if (preg_match($catRegexp, $categories)) {
-                    $filtered[] = $item;
-                }
-            }
-
-            $data->items = $filtered;
+            $this->cat = preg_replace('#[^a-z0-9\-/ ]#i', '', $cat);
 
             // Build the breadcrum with labels and urls
             $currentParams = array();

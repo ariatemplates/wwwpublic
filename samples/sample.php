@@ -9,9 +9,9 @@
 	$previous = &$data->previous;
 	$next = &$data->next;
 
-	$previousUrl = "/samples/?path=" . $previous->path;
-	$nextUrl = "/samples/?path=" . $next->path;
-	$backUrl = "/samples/";
+	$previousUrl = "/samples/" . $data->cat . "?path=" . $previous->path;
+	$nextUrl = "/samples/" . $data->cat . "?path=" . $next->path;
+	$backUrl = "/samples/" . $data->cat;
 
 	if ($data->waiAria) {
 		 $previousUrl .= "&wai=true";
