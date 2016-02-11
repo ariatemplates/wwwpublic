@@ -12,7 +12,9 @@
 <h1>
 	<?php echo $lastBreadcrumsItem['label']; ?>
 	<div class="breadcrum">
-		<?php foreach($breadcrums as &$breadcrum) {?>
+		<?php foreach($breadcrums as &$breadcrum) {
+			$catPath[] = $breadcrum['label'];
+		?>
 		<a href="<?php echo $breadcrum['url']; ?>"><?php echo $breadcrum['label']; ?></a> \
 		<?php } ?>
 	</div>

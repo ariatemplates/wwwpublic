@@ -4,6 +4,7 @@ require_once('../_autoload.php');
 class SamplesController {
 
     private $manifest;
+    private $cat = '';
 
     public function getData() {
 
@@ -19,6 +20,7 @@ class SamplesController {
         $cat = @$_GET['cat'];
         if ($cat != null) {
             $cat = preg_replace('#[^a-z0-9\-/ ]#i', '', $cat);
+            $this->cat = $cat;
             $filtered = array();
             $catRegexp = '#,'.$cat.'[,/]#i';
             foreach($data->items as $item) {
@@ -81,7 +83,7 @@ class SamplesController {
     }
 
     public function getSampleUrl($item) {
-        $url = "/samples/?path=" . $item->path;
+        $url = "/samples/".$this->cat."?path=" . $item->path;
         $waiAria = filter_input(INPUT_GET, "wai", FILTER_VALIDATE_BOOLEAN, array("flags" => FILTER_NULL_ON_FAILURE));
         if ($waiAria) {
             $url .= "&wai=true";
