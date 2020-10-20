@@ -29,6 +29,17 @@
 						</div>
 					</div>
 					<article class="columns">
+						<div style="margin: 2rem 0;padding: 1rem; border-radius: 0.5rem; line-height:1.5;border: 1px solid rgba(0,0,0,0.25);color: #fafafa;text-align: center;background: rgb(255,0,0);
+background: linear-gradient(0deg, rgba(224,4,4,1) 0%, rgba(255,0,0,1) 100%);">Please note that this public site will be shut down by December, 31st 2020.
+Amadeus users will be able to browse it internally<span id="internal_replica"></span>.
+						</div>
+						<script type="text/javascript">
+							fetch("http://ariatemplates.nce.amdeus.net").then(response => {
+								document.getElementById("internal_replica").innerHTML = `<a href="${response.url}" target="_blank">${response.url}</a>`
+							}).catch(() => {});
+						</script>
+					</article>
+					<article class="columns">
 						<h3>What is it ?</h3>
 						<p>Aria Templates (aka AT) is an application framework written in JavaScript for building rich and large-scaled enterprise web applications.
 						It is being developed since 2009 by <accr>Amadeus</accr> for its professional products. It has been designed for web apps that are used
